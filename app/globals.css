@@ -21,6 +21,7 @@ body {
   font-size: 16px;
   min-height: 100vh;
   background: radial-gradient(ellipse at top left, #7f50e4, #4c05d0);
+  margin: 5rem;
 }
 
 @layer utilities {
