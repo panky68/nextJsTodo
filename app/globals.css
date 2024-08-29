@@ -17,13 +17,10 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #e6ddf9;
+  font-size: 16px;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at top left, #7f50e4, #4c05d0);
 }
 
 @layer utilities {
