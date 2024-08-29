@@ -2,7 +2,7 @@ import { MdPostAdd, MdMessage } from "react-icons/md";
 
 const MainHeader = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between border-b-2 border-b-[#ece1fa] border-solid pb-4">
       <h1 className="text-3xl font-bold flex gap-4">
         <MdPostAdd />
         Pankys Todos

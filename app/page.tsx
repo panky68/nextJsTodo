@@ -1,7 +1,12 @@
+import TodoItem from "../components/todoItem";
+
 const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p>Todos App</p>
+    <main className="pt-12 grid gap-5 grid-cols-[repeat(3,30%)] justify-center">
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
     </main>
   );
 };
