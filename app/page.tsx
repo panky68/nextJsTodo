@@ -1,11 +1,10 @@
 import TodoList from "@/components/TodoList";
+import RootLayout from "./layout";
 
 const Home = () => {
   return (
     <>
-      <p>Pankys Todos</p>
-
-      <main className="pt-12">
+      <main>
         <TodoList />
       </main>
     </>
