@@ -5,9 +5,10 @@ import { TodoListProps } from "./TodoList";
 
 type NewTodoProps = {
   addTodo: (data: TodoListProps) => void;
+  cancelTodo: () => void;
 };
 
-const NewTodo: FC<NewTodoProps> = ({ addTodo }) => {
+const NewTodo: FC<NewTodoProps> = ({ addTodo, cancelTodo }) => {
   const [enteredTodo, setEnteredTodo] = useState<string>();
   const [enteredDate, setEnteredDate] = useState<string>();
 
@@ -26,7 +27,7 @@ const NewTodo: FC<NewTodoProps> = ({ addTodo }) => {
       todo: enteredTodo,
       date: enteredDate,
     });
-
+    cancelTodo();
     (event.target as HTMLFormElement).reset(); // reset the form elements after submit
   }
 
@@ -44,6 +45,7 @@ const NewTodo: FC<NewTodoProps> = ({ addTodo }) => {
         <button
           type="button"
           className=" bg-[#a990fb] text-[#2a2630] cursor-pointer hover:bg-white p-2 rounded"
+          onClick={cancelTodo}
         >
           Cancel
         </button>
